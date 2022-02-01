@@ -16,8 +16,7 @@ public class SwitchCase {
 			Scanner scannerObj = new Scanner(System.in);
 			System.out.println("Enter Any Number: ");
 			n = scannerObj.nextInt();
-			switch(n)
-			{
+			switch (n) {
 				case 1:
 					System.out.println("January");
 					break;
@@ -71,8 +70,7 @@ public class SwitchCase {
 					break;
 			}
 			scannerObj.close();
-		}
-		catch (InputMismatchException inputmismatchexception){
+		}catch (InputMismatchException inputmismatchexception){
 			System.err.println("Please enter only number");
 		}
 	}
