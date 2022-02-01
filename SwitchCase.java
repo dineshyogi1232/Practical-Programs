@@ -70,7 +70,7 @@ public class SwitchCase {
 					break;
 			}
 			scannerObj.close();
-		}catch (InputMismatchException inputmismatchexception){
+		} catch (InputMismatchException inputmismatchexception) {
 			System.err.println("Please enter only number");
 		}
 	}
