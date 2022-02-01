@@ -1,7 +1,7 @@
 package com.Programs;
 
 /**
- * @author	Dinesh 
+ * @author	Dinesh Yogi
  * @desc	Hello world program
  */
 public class Demo {
