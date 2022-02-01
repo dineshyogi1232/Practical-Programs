@@ -19,7 +19,7 @@ public class WhileDoWhile {
 		System.out.println("*** Using While Loop ***");
 		int start = 1;
 		int end = 10;
-		while(start<=end){
+		while (start <= end) {
 			System.out.print(start);
 			start++;
 		}
@@ -33,10 +33,10 @@ public class WhileDoWhile {
 		System.out.println("\n *** Using Do While Loop ***");
 		int start = 1;
 		int end = 10;
-		do{
+		do {
 			System.out.print(start);
 			start++;
-		}while(start<=end);
+		} while (start <= end);
 	}
 
 }
