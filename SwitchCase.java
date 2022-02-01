@@ -4,19 +4,18 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * @author	Dinesh 
+ * @author	Dinesh Yogi
  * @desc	Month name print using number given by number used by switch case
  */
 public class SwitchCase {
 
 	public static void main(String[] args) {
-		try
-		{
-			int n = 0;
+		try {
+			int noOfMonth = 0;
 			Scanner scannerObj = new Scanner(System.in);
-			System.out.println("Enter Any Number: ");
-			n = scannerObj.nextInt();
-			switch (n) {
+			System.out.println("Enter Number of Month: ");
+			noOfMonth = scannerObj.nextInt();
+			switch (noOfMonth) {
 				case 1:
 					System.out.println("January");
 					break;
