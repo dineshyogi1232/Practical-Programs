@@ -10,14 +10,14 @@ public class BreakContinue {
 	public static void main(String[] args) {
 		int start = 1;
 		int end = 10;
-		int brekingPointNum = 7;
+		int breakingPointNumber = 7;
 
 		while (start <= end) {
 			System.out.print(start);
 			start++;
-			if (start == brekingPointNum) {
+			if(start == breakingPointNumber){
 				start++;
-			} else {
+			}else{
 				continue;
 			}
 		}
