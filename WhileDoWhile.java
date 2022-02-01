@@ -13,14 +13,13 @@ public class WhileDoWhile {
 
 	/**
 	 * @author	Dinesh 
-	 * @desc	Number printing using while loop
+	 * @desc	10 Number printing using while loop
 	 */
-	static void whileLoop() {
+	static void whileLoop(){
 		System.out.println("*** Using While Loop ***");
 		int start = 1;
 		int end = 10;
-		while(start<=end) 
-		{
+		while(start<=end){
 			System.out.print(start);
 			start++;
 		}
@@ -28,17 +27,16 @@ public class WhileDoWhile {
 
 	/**
 	 * @author	Dinesh 
-	 * @desc	Number printing using do while loop
+	 * @desc	10 Number printing using do while loop
 	 */
-	static void doWhileLoop() {
+	static void doWhileLoop(){
 		System.out.println("\n *** Using Do While Loop ***");
 		int start = 1;
 		int end = 10;
-		do 
-		{
+		do{
 			System.out.print(start);
 			start++;
 		}while(start<=end);
 	}
-	
+
 }
