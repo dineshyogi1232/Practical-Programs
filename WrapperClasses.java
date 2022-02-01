@@ -1,18 +1,18 @@
 package com.Programs;
 
 /**
- * @author	Dinesh
+ * @author	Dinesh Yogi
  * @desc	Compare two variables of Wrapper class using Wrapper classes
  * 
  */
 public class WrapperClasses {
 
 	public static void main(String[] args) {
-		Integer wf = 0;
-		Integer ws = 0;
+		Integer integerObj1 = 0;
+		Integer integerObj2 = 0;
 
-		System.out.println(wf.compareTo(ws));
-		System.out.println(ws.compareTo(wf));
+		System.out.println(integerObj1.compareTo(integerObj2));
+		System.out.println(integerObj2.compareTo(integerObj1));
 	}
 
 }
