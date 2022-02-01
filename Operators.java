@@ -24,7 +24,7 @@ public class Operators {
 
 		//Mathematical formula
 		interest = interest / 12 / 100;
-		EMI = (loanAmount * interest * Math.pow((1+interest), noOfMonths)) / ((Math.pow((1+interest), noOfMonths) - 1));
+		EMI = (loanAmount * interest * Math.pow((1 + interest), noOfMonths)) / ((Math.pow((1 + interest), noOfMonths) - 1));
 
 		System.out.println("EMI is :" + EMI);
 		scannerObj.close();
