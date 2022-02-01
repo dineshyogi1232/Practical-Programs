@@ -1,8 +1,8 @@
 package com.Programs;
 
 /**
- * @author	Dinesh
- * @desc	print 10 numbers and stop the execution after 7 numbers using break and
+ * @author	Dinesh Yogi
+ * @desc	Print 10 numbers and stop the execution after 7 numbers using break and
  *			continue statement
  */
 public class BreakContinue {
