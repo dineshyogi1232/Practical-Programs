@@ -22,7 +22,7 @@ public class Operators {
 		System.out.println("Enter the Loan term (months):");
 		noOfMonths = scannerObj.nextInt();
 
-		//Mathematical formula
+		// Mathematical Calculation
 		interest = interest / 12 / 100;
 		EMI = (loanAmount * interest * Math.pow((1 + interest), noOfMonths)) / ((Math.pow((1 + interest), noOfMonths) - 1));
 
