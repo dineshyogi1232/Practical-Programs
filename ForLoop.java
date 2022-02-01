@@ -1,18 +1,19 @@
 package com.Programs;
 
 /**
- * @author	Dinesh
- * @desc	Pattern print using forloop
+ * @author	Dinesh Yogi
+ * @desc	Pattern print using for loop
  */
 public class ForLoop {
 
 	public static void main(String[] args) {
-		int i = 0;
-		int j = 0;
-		int n = 5;
+		int row = 0;
+		int column = 0;
+		int size = 5;
 
-		for (i = 1; i <= n; i++) {
-			for (j = 1; j <= i; j++) {
+		//For pattern 
+		for (row = 1; row <= size; row++) {
+			for (column = 1; column <= row; column++) {
 				System.out.print("* ");
 			}
 			System.out.println();
