@@ -12,11 +12,11 @@ public class SwitchCase {
 	public static void main(String[] args) {
 		try
 		{
-			int n=0;
-			Scanner scObj = new Scanner(System.in);
+			int n = 0;
+			Scanner scannerObj = new Scanner(System.in);
 			System.out.println("Enter Any Number: ");
-			n = scObj.nextInt();
-			switch(n) 
+			n = scannerObj.nextInt();
+			switch(n)
 			{
 				case 1:
 					System.out.println("January");
@@ -70,10 +70,9 @@ public class SwitchCase {
 					System.err.println("Enter valid month number...");
 					break;
 			}
-			scObj.close();
+			scannerObj.close();
 		}
-		catch (InputMismatchException inmismex) 
-		{
+		catch (InputMismatchException inmismex){
 			System.err.println("Please enter only number");
 		}
 	}
