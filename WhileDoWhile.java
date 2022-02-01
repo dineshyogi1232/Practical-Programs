@@ -1,7 +1,7 @@
 package com.Programs;
 
 /**
- * @author	Dinesh 
+ * @author	Dinesh Yogi
  * @desc	Number printing using while loop & do while loop
  */
 public class WhileDoWhile {	
@@ -11,10 +11,6 @@ public class WhileDoWhile {
 		doWhileLoop();
 	}
 
-	/**
-	 * @author	Dinesh Yogi
-	 * @desc	10 Number printing using while loop
-	 */
 	static void whileLoop() {
 		System.out.println("*** Using While Loop ***");
 		int start = 1;
@@ -25,10 +21,6 @@ public class WhileDoWhile {
 		}
 	}
 
-	/**
-	 * @author	Dinesh Yogi
-	 * @desc	10 Number printing using do while loop
-	 */
 	static void doWhileLoop() {
 		System.out.println("\n *** Using Do While Loop ***");
 		int start = 1;
