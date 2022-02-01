@@ -12,7 +12,7 @@ public class WhileDoWhile {
 	}
 
 	/**
-	 * @author	Dinesh 
+	 * @author	Dinesh Yogi
 	 * @desc	10 Number printing using while loop
 	 */
 	static void whileLoop() {
@@ -26,7 +26,7 @@ public class WhileDoWhile {
 	}
 
 	/**
-	 * @author	Dinesh 
+	 * @author	Dinesh Yogi
 	 * @desc	10 Number printing using do while loop
 	 */
 	static void doWhileLoop() {
