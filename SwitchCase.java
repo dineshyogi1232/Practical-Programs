@@ -72,7 +72,7 @@ public class SwitchCase {
 			}
 			scannerObj.close();
 		}
-		catch (InputMismatchException inmismex){
+		catch (InputMismatchException inputmismatchexception){
 			System.err.println("Please enter only number");
 		}
 	}
