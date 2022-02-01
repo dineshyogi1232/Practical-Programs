@@ -15,9 +15,9 @@ public class BreakContinue {
 		while (start <= end) {
 			System.out.print(start);
 			start++;
-			if(start == breakingPointNumber){
+			if (start == breakingPointNumber) {
 				start++;
-			}else{
+			} else {
 				continue;
 			}
 		}
