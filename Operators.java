@@ -10,20 +10,21 @@ import java.util.Scanner;
 public class Operators {
 
 	public static void main(String[] args) {
-		int p = 0;
-		float r = 0;
-		int n = 0;
+		int loanAmount = 0;
+		float interest = 0;
+		int noOfMonths = 0;
 		double EMI = 0.0;
 		Scanner scannerObj = new Scanner(System.in);
 		System.out.println("Enter the Principal loan amount you wish to avail (rupees): ");
-		p = scannerObj.nextInt();
+		loanAmount = scannerObj.nextInt();
 		System.out.println("Enter the Rate of interest (percentage): ");
-		r = scannerObj.nextFloat();
+		interest = scannerObj.nextFloat();
 		System.out.println("Enter the Loan term (months):");
-		n = scannerObj.nextInt();
+		noOfMonths = scannerObj.nextInt();
 
-		r = r / 12 / 100;
-		EMI = (p * r * Math.pow((1+r), n)) / ((Math.pow((1+r), n) - 1));
+		//Mathematical formula
+		interest = interest / 12 / 100;
+		EMI = (loanAmount * interest * Math.pow((1+interest), noOfMonths)) / ((Math.pow((1+interest), noOfMonths) - 1));
 
 		System.out.println("EMI is :" + EMI);
 		scannerObj.close();
