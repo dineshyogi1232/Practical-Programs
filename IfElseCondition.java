@@ -7,23 +7,21 @@ import java.util.Scanner;
  * @desc	age check using ifelse condiion
  */
 public class IfElseCondition {
-	public static void main(String[] args) {
-		final int MINAGE = 18;
-		int age=0;
-		Scanner scObj= new Scanner(System.in);
-		System.out.println("Enter the Age: ");
-		age = scObj.nextInt();
 
-		if(age>=MINAGE) 
-		{
+	public static void main(String[] args) {
+		final int MINIMUMAGE = 18;
+		int age = 0;
+		Scanner scannerObj= new Scanner(System.in);
+		System.out.println("Enter the Age: ");
+		age = scannerObj.nextInt();
+
+		if(age>=MINIMUMAGE){
 			System.out.println("You are eligible for vote");
 		}
-		else
-		{
+		else{
 			System.out.println("You are not eligible for vote");
 		}
-
-		scObj.close();
+		scannerObj.close();
 	}
 
 }
