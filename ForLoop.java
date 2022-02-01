@@ -11,8 +11,8 @@ public class ForLoop {
 		int j = 0;
 		int n = 5;
 
-		for (i = 1; i <= n; i++){
-			for (j = 1; j <= i; j++){
+		for (i = 1; i <= n; i++) {
+			for (j = 1; j <= i; j++) {
 				System.out.print("* ");
 			}
 			System.out.println();
