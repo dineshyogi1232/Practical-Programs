@@ -5,8 +5,9 @@ package com.Programs;
  * @desc	demonstrate the example of constructor and Parameterized constructor
  */
 public class Constructors {
-	int num1=0;
-	int num2=0;
+
+	int num1 = 0;
+	int num2 = 0;
 
 	public Constructors() {
 		System.out.println("Default Constructor");
@@ -19,10 +20,10 @@ public class Constructors {
 	}
 
 	public static void main(String[] args) {
-		Constructors constObj = new Constructors(1, 2);
-		System.out.println("Number 1 is: " + constObj.num1);
-		System.out.println("Number 2 is: " + constObj.num2);
-		System.out.println("Summation of two number is: " + (constObj.num1 + constObj.num2));
+		Constructors constructorObj = new Constructors(1, 2);
+		System.out.println("Number 1 is: " + constructorObj.num1);
+		System.out.println("Number 2 is: " + constructorObj.num2);
+		System.out.println("Summation of two number is: " + (constructorObj.num1 + constructorObj.num2));
 	}
 
 }
