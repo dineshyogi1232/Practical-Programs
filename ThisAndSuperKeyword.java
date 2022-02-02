@@ -1,10 +1,8 @@
 package com.Programs;
 
 /**
- * 
  * @author	Dinesh Yogi
  * @des		practical to use this & super variable.
- *
  */
 public class ThisAndSuperKeyword {
 

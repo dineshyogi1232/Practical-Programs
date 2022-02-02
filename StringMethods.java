@@ -1,4 +1,5 @@
 package com.Programs;
+
 /**
  * @author Dinesh Yogi
  * @des All the string methods like charAt(), concat(), equals() etc.
@@ -23,7 +24,6 @@ public class StringMethods {
 		System.out.println("String Convert into lowercase:" + string2.toLowerCase());
 		System.out.println("String Convert into uppercase:" + string1.toUpperCase());
 		System.out.println("Remove all spaces from string :" + string2.trim());
-
 	}
 
 }

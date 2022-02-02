@@ -1,8 +1,10 @@
 package com.Collection;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 /**
  * @author	Dinesh Yogi
  * @desc	Remove duplicate values of the list.

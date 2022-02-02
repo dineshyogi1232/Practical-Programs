@@ -1,6 +1,8 @@
 package com.OOPSConcepts;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 /**
  * @author	Dinesh Yogi
  * @desc	find the index of an array element.

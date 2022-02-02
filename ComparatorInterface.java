@@ -1,5 +1,7 @@
 package com.Collection;
+
 import java.util.Comparator;
+
 /**
  * @author	Dinesh Yogi
  * @desc	Comparator interface example

@@ -1,4 +1,5 @@
 package com.Collection;
+
 /**
  * @author	Dinesh Yogi
  * @desc	Comparable interface example
@@ -37,9 +38,9 @@ public class ComparableInterface {
 
 	public static void main(String[] args) {
 		int highestMarks = 0;
-		Student studentObj1 = new Student("Tom", 98);
-		Student studentObj2 = new Student("Jerry", 88);
-		highestMarks = studentObj1.compareTo(studentObj2);
+		Student student1 = new Student("Tom", 98);
+		Student student2 = new Student("Jerry", 88);
+		highestMarks = student1.compareTo(student2);
 
 		if (highestMarks == 1) {
 			System.out.println("Tom having highest marks...");

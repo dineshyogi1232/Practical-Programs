@@ -1,8 +1,10 @@
 package com.Collection;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+
 /**
  * @author	Dinesh Yogi
  * @desc	Read the data from a myTestFile file

@@ -1,5 +1,7 @@
 package com.OOPSConcepts;
+
 import java.util.Scanner;
+
 /**
  * @author	Dinesh Yogi
  * @desc	Demonstrate the Interface.
@@ -26,10 +28,9 @@ public class Interface implements Laptop {
 
 	@Override
 	public void laptopDetails() {
-		String laptopBrand = null;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Your Laptop Company Name: ");
-		laptopBrand = scanner.next();
+		String laptopBrand = scanner.next();
 		Laptop.price(laptopBrand);
 		scanner.close();
 	}

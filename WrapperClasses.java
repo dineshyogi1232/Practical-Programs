@@ -3,7 +3,6 @@ package com.Programs;
 /**
  * @author	Dinesh Yogi
  * @desc	Compare two variables of Wrapper class using Wrapper classes
- * 
  */
 public class WrapperClasses {
 
