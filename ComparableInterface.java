@@ -1,12 +1,8 @@
 package com.Collection;
-
 /**
- * 
  * @author	Dinesh Yogi
  * @desc	Comparable interface example
- *
  */
-
 class Student implements Comparable<Student> {
 
 	private String studentName = null;
@@ -28,10 +24,11 @@ class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student student) {
-		if (this.marks == student.marks)
+		if (marks == student.marks) {
 			return 0;
-		else
-			return this.marks > student.marks ? 1 : -1;
+		} else {
+			return marks > student.marks ? 1 : -1;
+		}
 	}
 
 }

@@ -1,7 +1,5 @@
 package com.OOPSConcepts;
-
 /**
- * 
  * @author	Dinesh Yogi
  * @desc	Run Time Polymorphism example
  */

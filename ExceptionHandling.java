@@ -1,13 +1,9 @@
 package com.OOPSConcepts;
-
 /**
- * 
  * @author	Dinesh Yogi
  * @desc	Demonstrate the Exception Handling using try, catch, finally, throw,
  *			and throws keyword.
- *
  */
-
 public class ExceptionHandling {
 
 	public static void main(String[] args) {
@@ -21,7 +17,6 @@ public class ExceptionHandling {
 			division = number1 / number2;
 
 			System.out.println("Division is : " + division);
-
 		} catch (ArithmeticException arithmeticexception) {
 			System.err.println("Arithmetic Exception Occured... ");
 		} finally {

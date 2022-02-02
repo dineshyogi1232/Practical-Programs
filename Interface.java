@@ -1,12 +1,8 @@
 package com.OOPSConcepts;
-
 import java.util.Scanner;
-
 /**
- * 
  * @author	Dinesh Yogi
  * @desc	Demonstrate the Interface.
- *
  */
 interface Laptop {
 

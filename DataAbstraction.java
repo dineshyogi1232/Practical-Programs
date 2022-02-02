@@ -1,10 +1,7 @@
 package com.OOPSConcepts;
-
 /**
- * 
  * @author	Dinesh Yogi
  * @desc	Demonstrate Data Abstraction
- *
  */
 class CarCompany {
 
