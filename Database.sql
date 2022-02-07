@@ -1,4 +1,4 @@
--- Create Database  Queries 
+ -- Create Database  Queries 
 CREATE DATABASE employee;
 
 USE employee;
