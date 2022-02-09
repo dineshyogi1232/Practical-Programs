@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Comparator interface example
+ * @desc	Comparator Interface Example
  */
 class Employee implements Comparator<Employee> {
 
@@ -42,9 +42,7 @@ public class ComparatorInterface {
 		String className = "ComparatorInterface";
 		Employee employee1 = new Employee("Tom", 100000);
 		Employee employee2 = new Employee("Jerry", 100001);
-
 		int highestSalary = employee1.compare(employee1, employee2);
-
 		if (highestSalary == 1) {
 			CallingLogger.getInfoLoggerFrom(className, "Tom has Highest Salary...");
 		} else if (highestSalary == -1) {

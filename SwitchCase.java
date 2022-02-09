@@ -2,12 +2,11 @@ package com.programs;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Month name print using number given by number used by switch case
+ * @desc	Month Name print using number given by number used by switch case
  */
 public class SwitchCase {
 

@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Comparable interface example
+ * @desc	Comparable Interface Example
  */
 class Student implements Comparable<Student> {
 
@@ -33,6 +33,7 @@ class Student implements Comparable<Student> {
 			return marks > student.marks ? 1 : -1;
 		}
 	}
+
 }
 
 public class ComparableInterface {
@@ -50,7 +51,6 @@ public class ComparableInterface {
 		} else {
 			CallingLogger.getInfoLoggerFrom(className, "Both having same marks...");
 		}
-
 	}
 
 }

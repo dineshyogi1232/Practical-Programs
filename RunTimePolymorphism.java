@@ -2,7 +2,7 @@ package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Run Time Polymorphism example
+ * @desc	Run Time Polymorphism Example
  */
 class Base {
 

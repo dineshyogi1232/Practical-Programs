@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Compare two variables of Wrapper class using Wrapper classes
+ * @desc	Compare Two variables of Wrapper class using Wrapper classes
  */
 public class WrapperClasses {
 

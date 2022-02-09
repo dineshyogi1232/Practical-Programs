@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate of Static Keyword
+ * @desc	Demonstrate of StaticKeyword
  */
 public class StaticKeyword {
 

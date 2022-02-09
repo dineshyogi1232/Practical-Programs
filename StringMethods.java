@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	All the string methods like charAt(), concat(), equals() etc.
+ * @desc	All the String methods like charAt(), concat(), equals() etc.
  */
 public class StringMethods {
 

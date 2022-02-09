@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Apply EMI Calculator in Java - Java program to calculate EMI using
+ * @desc	Apply EMI Calculator in Java - Java Program to calculate EMI using
  *			Class, Object, Variables, Operators, and Datatypes
  */
 public class Operators {
