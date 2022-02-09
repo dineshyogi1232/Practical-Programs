@@ -1,4 +1,4 @@
-package org.collection;
+package com.collection;
 
 import java.util.LinkedList;
 import com.oopsconcepts.CallingLogger;

@@ -1,4 +1,4 @@
-package org.collection;
+package com.collection;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

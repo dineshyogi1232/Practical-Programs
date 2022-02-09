@@ -1,4 +1,4 @@
-package org.collection;
+package com.collection;
 
 import java.io.File;
 import java.io.FileInputStream;
