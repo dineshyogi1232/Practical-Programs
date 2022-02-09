@@ -1,28 +1,28 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
  * @desc	Compile Time Polymorphism example
  */
-class Calculation {
+public class CompileTimePolymorphism {
 
-	static void sum(int number1, int number2) {
-		int sum = number1 + number2;
-		System.out.println("Sum of Two numbers... " + sum);
-	}
-
-	static void sum(int number3, int number4, int number5) {
-		int sum = number3 + number4 + number5;
-		System.out.println("Sum of Three numbers..." + sum);
+	public static void main(String[] args) {
+		CalculationProgram.sum(1, 2);
+		CalculationProgram.sum(1, 2, 3);
 	}
 
 }
 
-public class CompileTimePolymorphism {
+class CalculationProgram {
 
-	public static void main(String[] args) {
-		Calculation.sum(1, 2);
-		Calculation.sum(1, 2, 3);
+	static void sum(int number1, int number2) {
+		int sum = number1 + number2;
+		CallingLogger.getInfoLoggerFrom("CalculationProgram", "Sum of Two numbers... " + sum);
+	}
+
+	static void sum(int number3, int number4, int number5) {
+		int sum = number3 + number4 + number5;
+		CallingLogger.getInfoLoggerFrom("CalculationProgram", "Sum of Three numbers..." + sum);
 	}
 
 }

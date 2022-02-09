@@ -1,48 +1,70 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
  * @desc	Demonstrate Data Abstraction
  */
-class CarCompany {
+abstract class Shape {
 
-	String companyName = null;
+	String color = null;
 
-	public CarCompany() {
-		System.out.println("Default Constructor of CarCompany class...");
+	public abstract double area();
+
+	public abstract String toGetShape();
+
+	protected Shape(String color) {
+		CallingLogger.getInfoLoggerFrom("Shape", "Shape constructor called");
+		this.color = color;
 	}
 
-	public CarCompany(String companyName) {
-		super();
-		this.companyName = companyName;
-	}
-
-	@Override
-	public String toString() {
-		return "Company Name: " + companyName;
+	public String getColor() {
+		return color;
 	}
 
 }
 
-class Car extends CarCompany {
+class Circle extends Shape {
 
-	String carName = null;
-	String carColor = null;
+	double radius;
 
-	public Car() {
-		System.out.println("Dafault Constructor of Car class...");
+	public Circle(String color, double radius) {
+		super(color);
+		CallingLogger.getInfoLoggerFrom("Circle", "Circle constructor called");
+		this.radius = radius;
 	}
 
-	public Car(String company, String color, String name) {
-		super(company);
-		this.carColor = color;
-		this.carName = name;
+	@Override
+	public double area() {
+		return Math.PI * Math.pow(radius, 2);
 	}
 
-	void getDetails() {
-		System.out.println(super.toString());
-		System.out.println("Car Name : " + carName);
-		System.out.println("Car Color: " + carColor);
+	@Override
+	public String toGetShape() {
+		return "Circle color is " + super.getColor() + "and area is : " + area();
+	}
+
+}
+
+class Rectangle extends Shape {
+
+	double length;
+	double width;
+
+	public Rectangle(String color, double length, double width) {
+		super(color);
+		CallingLogger.getInfoLoggerFrom("Rectangle", "Rectangle constructor called");
+		this.length = length;
+		this.width = width;
+	}
+
+	@Override
+	public double area() {
+		return length * width;
+	}
+
+	@Override
+	public String toGetShape() {
+		return "Rectangle color is " + super.getColor() + " and area is : " + area();
 	}
 
 }
@@ -50,8 +72,10 @@ class Car extends CarCompany {
 public class DataAbstraction {
 
 	public static void main(String[] args) {
-		Car car = new Car("Honda", "Black", "Swift");
-		car.getDetails();
+		Shape s1 = new Circle("Black", 8.2);
+		Shape s2 = new Rectangle("White", 5, 6);
+		CallingLogger.getInfoLoggerFrom("DataAbstration", s1.toGetShape());
+		CallingLogger.getInfoLoggerFrom("DataAbstration", s2.toGetShape());
 	}
 
 }

@@ -1,6 +1,7 @@
-package com.Collection;
+package com.collection;
 
 import java.util.Comparator;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -38,13 +39,19 @@ class Employee implements Comparator<Employee> {
 public class ComparatorInterface {
 
 	public static void main(String[] args) {
+		String className = "ComparatorInterface";
 		Employee employee1 = new Employee("Tom", 100000);
 		Employee employee2 = new Employee("Jerry", 100001);
 
 		int highestSalary = employee1.compare(employee1, employee2);
 
-		System.out.println(highestSalary == 1 ? "Tom has Highest Salary... "
-				: highestSalary == -1 ? "Jerry has Highest Salary... " : "Both having same salary");
+		if (highestSalary == 1) {
+			CallingLogger.getInfoLoggerFrom(className, "Tom has Highest Salary...");
+		} else if (highestSalary == -1) {
+			CallingLogger.getInfoLoggerFrom(className, "Jerry has Highest Salary...");
+		} else {
+			CallingLogger.getInfoLoggerFrom(className, "Both having Same Salary...");
+		}
 	}
 
 }
