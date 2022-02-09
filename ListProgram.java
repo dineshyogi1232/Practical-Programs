@@ -1,8 +1,9 @@
-package com.Collection;
+package org.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -12,7 +13,7 @@ import java.util.List;
 public class ListProgram {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		list.add("Hello");
 		list.add("World");
 		list.add("QDev");
@@ -21,7 +22,7 @@ public class ListProgram {
 		Iterator<String> iterator = list.iterator();
 
 		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
+			CallingLogger.getInfoLoggerFrom("ListProgram", "" + iterator.next());
 		}
 	}
 

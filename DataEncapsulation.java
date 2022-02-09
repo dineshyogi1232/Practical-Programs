@@ -1,4 +1,4 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
@@ -43,8 +43,9 @@ public class DataEncapsulation {
 		student.setFirstName("Dinesh");
 		student.setLastName("Yogi");
 		student.setAge(18);
-		System.out.println("Student Name: " + student.getFirstName() + " " + student.getLastName());
-		System.out.println("Student Age: " + student.age);
+		CallingLogger.getInfoLoggerFrom("DataEncapsulation",
+				"Student Name: " + student.getFirstName() + " " + student.getLastName());
+		CallingLogger.getInfoLoggerFrom("DataEncapsulation", "Student Age: " + student.getAge());
 	}
 
 }

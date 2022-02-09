@@ -1,9 +1,10 @@
-package com.Collection;
+package org.collection;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -12,7 +13,7 @@ import java.util.Set;
 public class ListProgram2 {
 
 	public static void main(String[] args) {
-		List<String> originalList = new ArrayList<String>();
+		List<String> originalList = new ArrayList<>();
 		originalList.add("A");
 		originalList.add("B");
 		originalList.add("C");
@@ -26,8 +27,8 @@ public class ListProgram2 {
 		// Convert list in set to remove duplicate elements
 		Set<String> set = new HashSet<>(originalList);
 
-		List<String> newList = new ArrayList<String>(set);
-		System.out.println(newList.toString());
+		List<String> newList = new ArrayList<>(set);
+		CallingLogger.getInfoLoggerFrom("ListProgram2", "" + newList.toString());
 	}
 
 }

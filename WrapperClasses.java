@@ -1,4 +1,6 @@
-package com.Programs;
+package com.programs;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -10,8 +12,8 @@ public class WrapperClasses {
 		Integer integerObj1 = 0;
 		Integer integerObj2 = 0;
 
-		System.out.println(integerObj1.compareTo(integerObj2));
-		System.out.println(integerObj2.compareTo(integerObj1));
+		CallingLogger.getInfoLoggerFrom("WrapperClasses", "" + integerObj1.compareTo(integerObj2));
+		CallingLogger.getInfoLoggerFrom("WrapperClasses", "" + integerObj2.compareTo(integerObj1));
 	}
 
 }

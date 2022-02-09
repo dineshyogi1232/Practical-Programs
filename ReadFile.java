@@ -1,9 +1,10 @@
-package com.Collection;
+package org.collection;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -12,18 +13,18 @@ import java.util.Scanner;
 public class ReadFile {
 
 	public static void main(String[] args) throws IOException {
+		String className = "ReadFile";
 		Scanner scanner = new Scanner(System.in);
 		FileReader fileReader = new FileReader("myTestFile.txt");
 		try {
 			int countData = 0;
-
 			while ((countData = fileReader.read()) > 0) {
-				System.out.print((char) countData);
+				CallingLogger.getWarningLoggerFrom(className, "" + (char) countData);
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println(" FileNotFoundException....");
+			CallingLogger.getInfoLoggerFrom(className, "FileNotFoundException....");
 		} catch (IOException e) {
-			System.out.println(" Input Output Exception occured....");
+			CallingLogger.getWarningLoggerFrom(className, "FileNotFoundException....");
 		} finally {
 			fileReader.close();
 			scanner.close();

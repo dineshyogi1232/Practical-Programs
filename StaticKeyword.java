@@ -1,25 +1,31 @@
-package com.Programs;
+package com.programs;
 
 import java.util.Scanner;
+import com.oopsconcepts.CallingLogger;
 
+/**
+ * @author	Dinesh Yogi
+ * @desc	Demonstrate of Static Keyword
+ */
 public class StaticKeyword {
 
 	static int age = 0;
 	static String name = null;
+	static String className = "StaticKeyword";
 
 	static {
-		System.out.println("Hello,Good Morning");
+		CallingLogger.getInfoLoggerFrom(className, "Hello,Good Morning");
 	}
 
 	public static void main(String[] args) {
-		System.out.println(PersonDetail());
+		CallingLogger.getInfoLoggerFrom(className, personDetail());
 	}
 
-	static String PersonDetail() {
+	static String personDetail() {
 		Scanner scannerObj = new Scanner(System.in);
-		System.out.println("Enter the Name: ");
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Name: ");
 		name = scannerObj.next();
-		System.out.println("Enter the Age: ");
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Age: ");
 		age = scannerObj.nextInt();
 		scannerObj.close();
 		return "Name: " + name + "\n" + "Age: " + age;

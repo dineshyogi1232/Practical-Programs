@@ -1,10 +1,12 @@
-package com.Programs;
+package com.programs;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
  * @desc	Number printing using while loop & do while loop
  */
-public class WhileDoWhile {	
+public class WhileDoWhile {
 
 	public static void main(String[] args) {
 		whileLoop();
@@ -12,7 +14,7 @@ public class WhileDoWhile {
 	}
 
 	static void whileLoop() {
-		System.out.println("*** Using While Loop ***");
+		CallingLogger.getInfoLoggerFrom("WhileDoWhile", "*** Using While Loop ***");
 		int start = 1;
 		int end = 10;
 		while (start <= end) {
@@ -22,7 +24,7 @@ public class WhileDoWhile {
 	}
 
 	static void doWhileLoop() {
-		System.out.println("\n *** Using Do While Loop ***");
+		CallingLogger.getInfoLoggerFrom("WhileDoWhile", "\n *** Using Do While Loop ***");
 		int start = 1;
 		int end = 10;
 		do {

@@ -1,25 +1,26 @@
-package com.Programs;
+package com.programs;
 
 import java.util.Scanner;
+import com.oopsconcepts.CallingLogger;
 
 /**
- * @author	Dinesh Yogi 
+ * @author	Dinesh Yogi
  * @desc	Age check using if else condition
  */
 public class IfElseCondition {
 
 	public static void main(String[] args) {
+		String className = "IfElseCondition";
 		final int minimumAge = 18;
-		int age = 0;
 		Scanner scannerObj = new Scanner(System.in);
-		System.out.println("Enter the Age: ");
-		age = scannerObj.nextInt();
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Age: ");
+		int age = scannerObj.nextInt();
 
-		//for check age
+		// for check age
 		if (age >= minimumAge) {
-			System.out.println("You are eligible for vote");
+			CallingLogger.getInfoLoggerFrom(className, "You are eligible for vote");
 		} else {
-			System.out.println("You are not eligible for vote");
+			CallingLogger.getInfoLoggerFrom(className, "You are not eligible for vote");
 		}
 		scannerObj.close();
 	}
