@@ -91,7 +91,6 @@ VALUES
   (
     'Harry', 'Sam', 18, 999994959, 'Bapunagar'
   );
-
 INSERT INTO employee (
   first_name, last_name, age, mobile_number, 
   address
@@ -100,109 +99,88 @@ VALUES
   (
     'David', 'Gutta', 18, 999995399, 'Vasna'
   );
-
 -- Insert Data in employee_salary table Queries
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (10000, '2008-11-11', 1);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 2);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 3);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (10000, '2008-11-11', 1);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 5);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 5);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (10000, '2008-11-11', 4);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 2);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (15000, '2008-11-11', 3);
-
 INSERT INTO employee_salary (
   salary, salary_date, fk_employee_id
 ) 
 VALUES 
   (10000, '2008-11-11', 4);
-
 -- Insert Data in employee_hobby table Queries
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (1, 105);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (2, 104);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (3, 103);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (2, 101);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (5, 102);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (2, 101);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (3, 105);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (2, 103);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (4, 101);
-
 INSERT INTO employee_hobby (fk_employee_id, fk_hobby_id) 
 VALUES 
   (1, 102);
-
 -- Update Data Queries
 UPDATE 
   hobby 
@@ -210,14 +188,12 @@ SET
   NAME = 'Coding' 
 WHERE 
   NAME = 'riding';
-
 UPDATE 
   employee 
 SET 
   last_name = 'Addy' 
 WHERE 
   address = 'Bapunagar';
-
 UPDATE 
   employee_salary 
 SET 
@@ -225,7 +201,6 @@ SET
   salary_date = '2008-12-11' 
 WHERE 
   id = 2;
-
 UPDATE 
   employee_hobby 
 SET 
@@ -239,55 +214,45 @@ SET
   ) 
 WHERE 
   id = 1;
-
 -- Delete Data Queries
 DELETE FROM 
   employee 
 LIMIT 
   2;
-
 DELETE FROM 
   employee_salary 
 LIMIT 
   2;
-
 DELETE FROM 
   employee_hobby 
 LIMIT 
   2;
-
 DELETE FROM 
   hobby 
 LIMIT 
   2;
-
 -- Truncate Table Queries
 TRUNCATE TABLE hobby;
 TRUNCATE TABLE employee_salary;
 TRUNCATE TABLE employee_hobby;
 TRUNCATE TABLE employee;
-
 -- Select All Data Queries
 SELECT 
   * 
 FROM 
   hobby;
-
 SELECT 
   * 
 FROM 
   employee;
-
 SELECT 
   * 
 FROM 
   employee_hobby;
-
 SELECT 
   * 
 FROM 
   employee_salary;
-
 -- Create a select query to get  employee name, his/her employee_salary 
 SELECT 
   DISTINCT emp.first_name AS NAME, 
@@ -297,11 +262,9 @@ FROM
   employee_salary AS es 
 WHERE 
   emp.id = es.fk_employee_id;
-
 -- select single query to get all employee name, all hobby_name in single column 
 SELECT 
-  CONCAT(
-    first_name, ' ',last_name) AS NAME 
+  CONCAT(first_name, ' ', last_name) AS NAME 
 FROM 
   employee 
 UNION ALL 
@@ -309,7 +272,6 @@ SELECT
   NAME AS hobby 
 FROM 
   hobby;
-
 -- Get employee name, total salary of employee, hobby name(comma-separated - you need to use subquery for hobby name)
 SELECT 
   CONCAT(

@@ -18,11 +18,9 @@ public class ListProgram {
 		list.add("World");
 		list.add("QDev");
 		list.add("Technolabs");
-
 		Iterator<String> iterator = list.iterator();
-
 		while (iterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom("ListProgram", "" + iterator.next());
+			CallingLogger.getInfoLoggerFrom("ListProgram", iterator.next());
 		}
 	}
 

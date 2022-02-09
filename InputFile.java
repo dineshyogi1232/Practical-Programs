@@ -1,12 +1,9 @@
 package com.collection;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Scanner;
-
 import com.oopsconcepts.CallingLogger;
 
 /**
@@ -16,42 +13,19 @@ import com.oopsconcepts.CallingLogger;
  */
 public class InputFile {
 
-	public static void main(String[] args) throws FileNotFoundException {
-		int countData = 0;
+	public static void main(String[] args) {
 		String className = "InputFile";
 		Scanner scanner = new Scanner(System.in);
-		File file = new File("myTestFile.txt");
-		FileOutputStream fileOutputStream = new FileOutputStream(file);
-		FileInputStream fileInputStream = new FileInputStream(file);
-
-		if (!file.exists()) {
-			try {
-				file.createNewFile();
-			} catch (IOException e) {
-				e.printStackTrace();
-				CallingLogger.getWarningLoggerFrom(className, "File creation error... ");
-			}
-		}
-
+		Path path = Path.of("myTestFile.txt");
+		CallingLogger.getInfoLoggerFrom(className, "Enter your data which you want to add in file: ");
+		String data = scanner.next();
 		try {
-			CallingLogger.getInfoLoggerFrom(className, "Enter your data which you want to add in file: ");
-			String data = scanner.next();
-			fileOutputStream.write(data.getBytes());
-			while ((countData = fileInputStream.read()) > 0) {
-				CallingLogger.getInfoLoggerFrom(className, "" + (char) countData);
-			}
-
-		} catch (FileNotFoundException e) {
-			CallingLogger.getWarningLoggerFrom(className, "File not found... ");
+			Files.writeString(path, data);
+			CallingLogger.getInfoLoggerFrom(className, "Data inserted in file");
 		} catch (IOException e) {
-			CallingLogger.getWarningLoggerFrom(className, "Input Output Exception... ");
+			e.printStackTrace();
+			CallingLogger.getInfoLoggerFrom(className, "Insertion Failed exception occured...");
 		} finally {
-			try {
-				fileInputStream.close();
-				fileOutputStream.close();
-			} catch (IOException e) {
-				CallingLogger.getWarningLoggerFrom(className, "Input Output Exception... ");
-			}
 			scanner.close();
 		}
 	}

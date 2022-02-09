@@ -16,12 +16,12 @@ public class LinkedHashSetProgram {
 		for (int count = 0; count <= size; count++) {
 			linkedHashSet.add(count);
 		}
-		CallingLogger.getInfoLoggerFrom(className, "" + linkedHashSet);
+		CallingLogger.getInfoLoggerFrom(className,linkedHashSet.toString());
 		CallingLogger.getInfoLoggerFrom(className, "Check set is empty or not... " + linkedHashSet.isEmpty());
 		CallingLogger.getInfoLoggerFrom(className, "Check Size of set... " + linkedHashSet.size());
 		CallingLogger.getInfoLoggerFrom(className,
 				"Remove element from set it returns true or false... " + linkedHashSet.remove(1));
-		CallingLogger.getInfoLoggerFrom(className, "" + linkedHashSet);
+		CallingLogger.getInfoLoggerFrom(className, linkedHashSet.toString());
 		linkedHashSet.clear();
 		CallingLogger.getInfoLoggerFrom(className, "After clear the set using clear()... " + linkedHashSet);
 	}

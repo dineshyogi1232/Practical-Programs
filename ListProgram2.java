@@ -23,12 +23,10 @@ public class ListProgram2 {
 		originalList.add("E");
 		originalList.add("E");
 		originalList.add("E");
-
 		// Convert list in set to remove duplicate elements
 		Set<String> set = new HashSet<>(originalList);
-
 		List<String> newList = new ArrayList<>(set);
-		CallingLogger.getInfoLoggerFrom("ListProgram2", "" + newList.toString());
+		CallingLogger.getInfoLoggerFrom("ListProgram2", newList.toString());
 	}
 
 }

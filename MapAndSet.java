@@ -32,12 +32,12 @@ public class MapAndSet {
 		Iterator<Integer> setIterator = set.iterator();
 		CallingLogger.getInfoLoggerFrom(className, "Set Element List: ");
 		while (setIterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className, "" + setIterator.next());
+			CallingLogger.getInfoLoggerFrom(className, setIterator.next().toString());
 		}
 		Iterator<String> mapIterator = map.values().iterator();
 		CallingLogger.getInfoLoggerFrom(className, "Map Element List: ");
 		while (mapIterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className, "" + mapIterator.next());
+			CallingLogger.getInfoLoggerFrom(className,mapIterator.next());
 		}
 	}
 
