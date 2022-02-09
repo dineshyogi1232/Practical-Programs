@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Find the index of an array element.
+ * @desc	Find the index of An Array element.
  */
 public class Array {
 
