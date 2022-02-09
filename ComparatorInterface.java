@@ -12,26 +12,26 @@ class Employee implements Comparator<Employee> {
 	private String employeeName = null;
 	private int salary = 0;
 
-	public Employee(String employeeName, int marks) {
+	public Employee(String employeeName, int salary) {
 		super();
 		this.employeeName = employeeName;
-		this.salary = marks;
+		this.salary = salary;
 	}
 
 	public String getStudentName() {
 		return employeeName;
 	}
 
-	public int getMarks() {
+	public int getSalary() {
 		return salary;
 	}
 
 	@Override
-	public int compare(Employee employeeObj1, Employee employeeObj2) {
-		if (employeeObj1.salary == employeeObj2.salary) {
+	public int compare(Employee employee1, Employee employee2) {
+		if (employee1.salary == employee2.salary) {
 			return 0;
 		}
-		return employeeObj1.salary > employeeObj2.salary ? 1 : -1;
+		return employee1.salary > employee2.salary ? 1 : -1;
 	}
 
 }

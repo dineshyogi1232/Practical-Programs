@@ -9,11 +9,10 @@ import com.oopsconcepts.CallingLogger;
 public class WrapperClasses {
 
 	public static void main(String[] args) {
-		Integer integerObj1 = 0;
-		Integer integerObj2 = 0;
-
-		CallingLogger.getInfoLoggerFrom("WrapperClasses", "" + integerObj1.compareTo(integerObj2));
-		CallingLogger.getInfoLoggerFrom("WrapperClasses", "" + integerObj2.compareTo(integerObj1));
+		Integer integer1 = 0;
+		Integer integer2 = 0;
+		CallingLogger.getInfoLoggerFrom("WrapperClasses", String.valueOf(integer1.compareTo(integer2)));
+		CallingLogger.getInfoLoggerFrom("WrapperClasses", String.valueOf(integer2.compareTo(integer1)));
 	}
 
 }

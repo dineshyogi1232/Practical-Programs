@@ -13,20 +13,20 @@ import com.oopsconcepts.CallingLogger;
 public class ListProgram2 {
 
 	public static void main(String[] args) {
-		List<String> originalList = new ArrayList<>();
-		originalList.add("A");
-		originalList.add("B");
-		originalList.add("C");
-		originalList.add("D");
-		originalList.add("A");
-		originalList.add("C");
-		originalList.add("E");
-		originalList.add("E");
-		originalList.add("E");
+		List<String> list1 = new ArrayList<>();
+		list1.add("A");
+		list1.add("B");
+		list1.add("C");
+		list1.add("D");
+		list1.add("A");
+		list1.add("C");
+		list1.add("E");
+		list1.add("E");
+		list1.add("E");
 		// Convert list in set to remove duplicate elements
-		Set<String> set = new HashSet<>(originalList);
-		List<String> newList = new ArrayList<>(set);
-		CallingLogger.getInfoLoggerFrom("ListProgram2", newList.toString());
+		Set<String> set = new HashSet<>(list1);
+		List<String> list2 = new ArrayList<>(set);
+		CallingLogger.getInfoLoggerFrom("ListProgram2", list2.toString());
 	}
 
 }

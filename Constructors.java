@@ -23,10 +23,10 @@ public class Constructors {
 	}
 
 	public static void main(String[] args) {
-		Constructors constructorObj = new Constructors(1, 2);
-		CallingLogger.getInfoLoggerFrom(className, "" + constructorObj.number1);
-		CallingLogger.getInfoLoggerFrom(className, "" + constructorObj.number2);
-		CallingLogger.getInfoLoggerFrom(className, "" + (constructorObj.number1 + constructorObj.number2));
+		Constructors constructor = new Constructors(1, 2);
+		CallingLogger.getInfoLoggerFrom(className, "" + constructor.number1);
+		CallingLogger.getInfoLoggerFrom(className, "" + constructor.number2);
+		CallingLogger.getInfoLoggerFrom(className, "" + (constructor.number1 + constructor.number2));
 	}
 
 }

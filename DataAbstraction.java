@@ -72,10 +72,10 @@ class Rectangle extends Shape {
 public class DataAbstraction {
 
 	public static void main(String[] args) {
-		Shape s1 = new Circle("Black", 8.2);
-		Shape s2 = new Rectangle("White", 5, 6);
-		CallingLogger.getInfoLoggerFrom("DataAbstration", s1.toGetShape());
-		CallingLogger.getInfoLoggerFrom("DataAbstration", s2.toGetShape());
+		Shape shape1 = new Circle("Black", 8.2);
+		Shape shape2 = new Rectangle("White", 5, 6);
+		CallingLogger.getInfoLoggerFrom("DataAbstration", shape1.toGetShape());
+		CallingLogger.getInfoLoggerFrom("DataAbstration", shape2.toGetShape());
 	}
 
 }

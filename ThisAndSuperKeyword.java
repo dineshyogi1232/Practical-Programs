@@ -8,20 +8,20 @@ import com.oopsconcepts.CallingLogger;
  */
 public class ThisAndSuperKeyword {
 
-	int number1 = 0;
+	int number = 0;
 
 	public ThisAndSuperKeyword() {
 		CallingLogger.getInfoLoggerFrom("ThisAndSuperKeyword", "Default Constructor called... ");
 	}
 
-	public ThisAndSuperKeyword(int num) {
+	public ThisAndSuperKeyword(int number) {
 		super();
-		this.number1 = num;
-		CallingLogger.getInfoLoggerFrom("ThisAndSuperKeyword", "" + number1);
+		this.number = number;
+		CallingLogger.getInfoLoggerFrom("ThisAndSuperKeyword", String.valueOf(number));
 	}
 
 	public static void main(String[] args) {
-		ThisAndSuperKeyword thisAndSuperKeywordObj = new ThisAndSuperKeyword(121);
+		ThisAndSuperKeyword thisAndSuperKeyword = new ThisAndSuperKeyword(121);
 	}
 
 }

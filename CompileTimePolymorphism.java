@@ -7,22 +7,20 @@ package com.oopsconcepts;
 public class CompileTimePolymorphism {
 
 	public static void main(String[] args) {
-		CalculationProgram.sum(1, 2);
-		CalculationProgram.sum(1, 2, 3);
+		CallingLogger.getInfoLoggerFrom("CompileTimePolymorphism", ProgramOfCalculation.sum(1, 2));
+		CallingLogger.getInfoLoggerFrom("CompileTimePolymorphism", ProgramOfCalculation.sum(1, 2, 3));
 	}
 
 }
 
-class CalculationProgram {
+class ProgramOfCalculation {
 
-	static void sum(int number1, int number2) {
-		int sum = number1 + number2;
-		CallingLogger.getInfoLoggerFrom("CalculationProgram", "Sum of Two numbers... " + sum);
+	static String sum(int number1, int number2) {
+		return "Sum of Two numbers... " + (number1 + number2);
 	}
 
-	static void sum(int number3, int number4, int number5) {
-		int sum = number3 + number4 + number5;
-		CallingLogger.getInfoLoggerFrom("CalculationProgram", "Sum of Three numbers..." + sum);
+	static String sum(int number1, int number2, int number3) {
+		return "Sum of Three numbers..." + (number1 + number2 + number3);
 	}
 
 }

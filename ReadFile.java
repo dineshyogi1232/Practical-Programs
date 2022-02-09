@@ -13,11 +13,11 @@ public class ReadFile {
 
 	public static void main(String[] args) throws IOException {
 		File file = new File("myTestFile.txt");
-		Scanner sc = new Scanner(file);
-		while (sc.hasNextLine()) {
-			CallingLogger.getInfoLoggerFrom("ReadFile", sc.nextLine());
+		Scanner scanner = new Scanner(file);
+		while (scanner.hasNextLine()) {
+			CallingLogger.getInfoLoggerFrom("ReadFile", scanner.nextLine());
 		}
-		sc.close();
+		scanner.close();
 	}
 
 }

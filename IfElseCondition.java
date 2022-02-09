@@ -12,9 +12,9 @@ public class IfElseCondition {
 	public static void main(String[] args) {
 		String className = "IfElseCondition";
 		final int minimumAge = 18;
-		Scanner scannerObj = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		CallingLogger.getInfoLoggerFrom(className, "Enter the Age: ");
-		int age = scannerObj.nextInt();
+		int age = scanner.nextInt();
 
 		// for check age
 		if (age >= minimumAge) {
@@ -22,7 +22,7 @@ public class IfElseCondition {
 		} else {
 			CallingLogger.getInfoLoggerFrom(className, "You are not eligible for vote");
 		}
-		scannerObj.close();
+		scanner.close();
 	}
 
 }
