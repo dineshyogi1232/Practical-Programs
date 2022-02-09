@@ -22,12 +22,12 @@ public class StaticKeyword {
 	}
 
 	static String personDetail() {
-		Scanner scannerObj = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		CallingLogger.getInfoLoggerFrom(className, "Enter the Name: ");
-		name = scannerObj.next();
+		name = scanner.next();
 		CallingLogger.getInfoLoggerFrom(className, "Enter the Age: ");
-		age = scannerObj.nextInt();
-		scannerObj.close();
+		age = scanner.nextInt();
+		scanner.close();
 		return "Name: " + name + "\n" + "Age: " + age;
 	}
 

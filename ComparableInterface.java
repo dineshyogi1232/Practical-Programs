@@ -41,12 +41,11 @@ public class ComparableInterface {
 	public static void main(String[] args) {
 		String className = "ComparableInterface";
 		Student student1 = new Student("Tom", 98);
-		Student studentObj2 = new Student("Jerry", 88);
-		int highestMarks = student1.compareTo(studentObj2);
-
-		if (highestMarks > 0) {
+		Student student2 = new Student("Jerry", 88);
+		int highestMark = student1.compareTo(student2);
+		if (highestMark > 0) {
 			CallingLogger.getInfoLoggerFrom(className, "Tom having highest marks...");
-		} else if (highestMarks < 0) {
+		} else if (highestMark < 0) {
 			CallingLogger.getInfoLoggerFrom(className, "Jerry having highest marks...");
 		} else {
 			CallingLogger.getInfoLoggerFrom(className, "Both having same marks...");

@@ -24,8 +24,8 @@ class Derived extends Base {
 public class RunTimePolymorphism {
 
 	public static void main(String[] args) {
-		Base derived = new Derived();
-		derived.display();
+		Base base = new Derived();
+		base.display();
 	}
 
 }

@@ -29,15 +29,15 @@ public class MapAndSet {
 		map.put(4, "D");
 		map.put(5, "E");
 
-		Iterator<Integer> setIterator = set.iterator();
+		Iterator<Integer> iterator1 = set.iterator();
 		CallingLogger.getInfoLoggerFrom(className, "Set Element List: ");
-		while (setIterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className, setIterator.next().toString());
+		while (iterator1.hasNext()) {
+			CallingLogger.getInfoLoggerFrom(className, iterator1.next().toString());
 		}
-		Iterator<String> mapIterator = map.values().iterator();
+		Iterator<String> iterator2 = map.values().iterator();
 		CallingLogger.getInfoLoggerFrom(className, "Map Element List: ");
-		while (mapIterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className,mapIterator.next());
+		while (iterator2.hasNext()) {
+			CallingLogger.getInfoLoggerFrom(className,iterator2.next());
 		}
 	}
 

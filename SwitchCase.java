@@ -12,10 +12,10 @@ public class SwitchCase {
 
 	public static void main(String[] args) {
 		String className = "SwitchCase";
-		Scanner scannerObj = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		try {
 			CallingLogger.getInfoLoggerFrom(className, "Enter Number of Month: ");
-			int noOfMonth = scannerObj.nextInt();
+			int noOfMonth = scanner.nextInt();
 			switch (noOfMonth) {
 			case 1:
 				CallingLogger.getInfoLoggerFrom(className, "January");
@@ -72,7 +72,7 @@ public class SwitchCase {
 		} catch (InputMismatchException inputmismatchexception) {
 			CallingLogger.getWarningLoggerFrom(className, "Please enter only number");
 		} finally {
-			scannerObj.close();
+			scanner.close();
 		}
 	}
 
