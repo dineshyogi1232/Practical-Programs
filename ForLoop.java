@@ -2,7 +2,7 @@ package com.programs;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Pattern print using for loop
+ * @desc	Pattern Print using for loop
  */
 public class ForLoop {
 

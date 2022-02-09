@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Create for calling logger in all classes
+ * @desc	Create for Calling logger in all classes
  */
 
 public class CallingLogger {

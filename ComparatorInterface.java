@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Comparator interface example
+ * @desc	Comparator Interface Example
  */
 class Employee implements Comparator<Employee> {
 

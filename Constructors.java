@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate the example of constructor and Parameterized constructor
+ * @desc	Demonstrate The Example of constructor and Parameterized constructor
  */
 public class Constructors {
 

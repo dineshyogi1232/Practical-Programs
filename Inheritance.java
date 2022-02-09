@@ -2,7 +2,7 @@ package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate the Inheritance.
+ * @desc	Demonstrate The Inheritance.
  */
 class Parent {
 

@@ -3,7 +3,7 @@ package com.oopsconcepts;
 /**
  * @author	Dinesh Yogi
  * @desc	Demonstrate the Exception Handling using try, catch, finally, throw,
- *			and throws keyword.
+ *			and Throws Keyword.
  */
 public class ExceptionHandling {
 

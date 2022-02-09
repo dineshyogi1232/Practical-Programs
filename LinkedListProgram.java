@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate of LinkedListProgram Program
+ * @desc	Demonstrate Of LinkedListProgram Program
  */
 public class LinkedListProgram {
 

@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate of HashSet Program
+ * @desc	Demonstrate Of HashSet Program
  */
 public class HashSetProgram {
 

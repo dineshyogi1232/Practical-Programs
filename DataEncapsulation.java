@@ -2,7 +2,7 @@ package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate Data Encapsulation
+ * @desc	Demonstrate Data Encapsulation Program
  */
 class Student {
 

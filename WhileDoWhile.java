@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Number printing using while loop & do while loop
+ * @desc	Number Printing using while loop & do while loop
  */
 public class WhileDoWhile {
 

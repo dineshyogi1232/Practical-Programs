@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate the Interface.
+ * @desc	Demonstrate The Interface.
  */
 interface Laptop {
 

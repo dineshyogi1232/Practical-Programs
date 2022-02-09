@@ -6,7 +6,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate of Deque Program
+ * @desc	Demonstrate Of Deque Program
  */
 public class DequeProgram {
 

@@ -2,7 +2,7 @@ package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate Data Abstraction
+ * @desc	Demonstrate DataAbstraction Program
  */
 abstract class Shape {
 

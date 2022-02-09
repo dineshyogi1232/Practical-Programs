@@ -8,7 +8,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Read the data from a myTestFile file
+ * @desc	Read the Data from a myTestFile file
  */
 public class ReadFile {
 

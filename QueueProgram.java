@@ -6,7 +6,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Demonstrate of Queue Program
+ * @desc	Demonstrate Of Queue Program
  */
 public class QueueProgram {
 

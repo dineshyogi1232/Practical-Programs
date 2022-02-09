@@ -8,7 +8,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Remove duplicate values of the list.
+ * @desc	Remove Duplicate values of the list.
  */
 public class ListProgram2 {
 

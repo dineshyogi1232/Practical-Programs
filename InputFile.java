@@ -11,7 +11,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Create a text file(The file name is “myTestFile”) and add your personal
+ * @desc	Create a Text File(The file name is “myTestFile”) and add your personal
  *			details to the test file
  */
 public class InputFile {

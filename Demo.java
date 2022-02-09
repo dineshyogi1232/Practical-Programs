@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Hello world program
+ * @desc	Hello World program
  */
 public class Demo {
 

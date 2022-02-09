@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Comparable interface example
+ * @desc	Comparable Interface Example
  */
 class Student implements Comparable<Student> {
 

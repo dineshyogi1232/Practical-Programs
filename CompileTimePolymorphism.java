@@ -2,7 +2,7 @@ package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Compile Time Polymorphism example
+ * @desc	Compile Time Polymorphism Example
  */
 public class CompileTimePolymorphism {
 

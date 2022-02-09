@@ -9,7 +9,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Program using Map and Set concepts
+ * @desc	Program Using Map and Set concepts
  */
 public class MapAndSet {
 

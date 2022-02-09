@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @des		practical to use this & super variable.
+ * @des		Practical to use this & super variable.
  */
 public class ThisAndSuperKeyword {
 

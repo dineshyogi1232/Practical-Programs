@@ -4,7 +4,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Print 10 numbers and stop the execution after 7 numbers using break and
+ * @desc	Print 10 Numbers and stop the execution after 7 numbers using break and
  *			continue statement
  */
 

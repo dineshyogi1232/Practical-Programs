@@ -5,7 +5,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Age check using if else condition
+ * @desc	Age Check using if else condition
  */
 public class IfElseCondition {
 

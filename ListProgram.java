@@ -7,7 +7,7 @@ import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
- * @desc	Add string values(“Hello”,”world”,”$yourname” etc.) in the list and
+ * @desc	Add String Values(“Hello”,”world”,”$yourname” etc.) in the list and
  *			print all the values using an iterator.
  */
 public class ListProgram {
