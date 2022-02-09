@@ -1,4 +1,4 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
@@ -7,15 +7,16 @@ package com.OOPSConcepts;
 class Base {
 
 	void display() {
-		System.out.println("Base Class Called... ");
+		CallingLogger.getInfoLoggerFrom("Base", "Base Class Called... ");
 	}
 
 }
 
 class Derived extends Base {
 
+	@Override
 	void display() {
-		System.out.println("Derived Class Called... ");
+		CallingLogger.getInfoLoggerFrom("Derived", "Derived Class Called... ");
 	}
 
 }
@@ -23,9 +24,7 @@ class Derived extends Base {
 public class RunTimePolymorphism {
 
 	public static void main(String[] args) {
-		Base base = new Base();
 		Base derived = new Derived();
-		base.display();
 		derived.display();
 	}
 

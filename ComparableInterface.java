@@ -1,4 +1,6 @@
-package com.Collection;
+package com.collection;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -31,23 +33,22 @@ class Student implements Comparable<Student> {
 			return marks > student.marks ? 1 : -1;
 		}
 	}
-
 }
 
 public class ComparableInterface {
 
 	public static void main(String[] args) {
-		int highestMarks = 0;
+		String className = "ComparableInterface";
 		Student student1 = new Student("Tom", 98);
-		Student student2 = new Student("Jerry", 88);
-		highestMarks = student1.compareTo(student2);
+		Student studentObj2 = new Student("Jerry", 88);
+		int highestMarks = student1.compareTo(studentObj2);
 
-		if (highestMarks == 1) {
-			System.out.println("Tom having highest marks...");
-		} else if (highestMarks == -1) {
-			System.out.println("Jerry having highest marks...");
+		if (highestMarks > 0) {
+			CallingLogger.getInfoLoggerFrom(className, "Tom having highest marks...");
+		} else if (highestMarks < 0) {
+			CallingLogger.getInfoLoggerFrom(className, "Jerry having highest marks...");
 		} else {
-			System.out.println("Same");
+			CallingLogger.getInfoLoggerFrom(className, "Both having same marks...");
 		}
 
 	}

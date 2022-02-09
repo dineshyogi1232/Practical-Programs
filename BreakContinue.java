@@ -1,10 +1,13 @@
-package com.Programs;
+package com.programs;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
  * @desc	Print 10 numbers and stop the execution after 7 numbers using break and
  *			continue statement
  */
+
 public class BreakContinue {
 
 	public static void main(String[] args) {
@@ -13,7 +16,7 @@ public class BreakContinue {
 		int breakingPointNumber = 7;
 
 		while (start <= end) {
-			System.out.print(start);
+			CallingLogger.getInfoLoggerFrom("BreakContinue", "" + start);
 			start++;
 			if (start == breakingPointNumber) {
 				start++;

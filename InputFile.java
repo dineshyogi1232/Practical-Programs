@@ -1,4 +1,4 @@
-package com.Collection;
+package com.collection;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -16,7 +18,7 @@ public class InputFile {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		int countData = 0;
-		String data = null;
+		String className = "InputFile";
 		Scanner scanner = new Scanner(System.in);
 		File file = new File("myTestFile.txt");
 		FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -27,28 +29,28 @@ public class InputFile {
 				file.createNewFile();
 			} catch (IOException e) {
 				e.printStackTrace();
-				System.err.println("File creation error... ");
+				CallingLogger.getWarningLoggerFrom(className, "File creation error... ");
 			}
 		}
 
 		try {
-			System.out.println("Enter your data which you want to add in file: ");
-			data = scanner.next();
+			CallingLogger.getInfoLoggerFrom(className, "Enter your data which you want to add in file: ");
+			String data = scanner.next();
 			fileOutputStream.write(data.getBytes());
 			while ((countData = fileInputStream.read()) > 0) {
-				System.out.print((char) countData);
+				CallingLogger.getInfoLoggerFrom(className, "" + (char) countData);
 			}
 
 		} catch (FileNotFoundException e) {
-			System.err.println("File not found... ");
+			CallingLogger.getWarningLoggerFrom(className, "File not found... ");
 		} catch (IOException e) {
-			System.err.println("Input Output Exception... ");
+			CallingLogger.getWarningLoggerFrom(className, "Input Output Exception... ");
 		} finally {
 			try {
 				fileInputStream.close();
 				fileOutputStream.close();
 			} catch (IOException e) {
-				System.err.println("Input Output Exception... ");
+				CallingLogger.getWarningLoggerFrom(className, "Input Output Exception... ");
 			}
 			scanner.close();
 		}

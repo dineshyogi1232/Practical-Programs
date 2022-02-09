@@ -1,6 +1,7 @@
-package com.Programs;
+package com.programs;
 
 import java.util.Scanner;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -10,23 +11,21 @@ import java.util.Scanner;
 public class Operators {
 
 	public static void main(String[] args) {
-		int loanAmount = 0;
-		float interest = 0;
-		int noOfMonths = 0;
-		double EMI = 0.0;
+		String className = "Operators";
 		Scanner scannerObj = new Scanner(System.in);
-		System.out.println("Enter the Principal loan amount you wish to avail (rupees): ");
-		loanAmount = scannerObj.nextInt();
-		System.out.println("Enter the Rate of interest (percentage): ");
-		interest = scannerObj.nextFloat();
-		System.out.println("Enter the Loan term (months):");
-		noOfMonths = scannerObj.nextInt();
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Principal loan amount you wish to avail (rupees): ");
+		int loanAmount = scannerObj.nextInt();
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Rate of interest (percentage): ");
+		float interest = scannerObj.nextFloat();
+		CallingLogger.getInfoLoggerFrom(className, "Enter the Loan term (months):");
+		int noOfMonths = scannerObj.nextInt();
 
 		// Mathematical Calculation
 		interest = interest / 12 / 100;
-		EMI = (loanAmount * interest * Math.pow((1 + interest), noOfMonths)) / ((Math.pow((1 + interest), noOfMonths) - 1));
+		double emi = (loanAmount * interest * Math.pow((1 + interest), noOfMonths))
+				/ ((Math.pow((1 + interest), noOfMonths) - 1));
 
-		System.out.println("EMI is :" + EMI);
+		CallingLogger.getInfoLoggerFrom(className, "EMI is :" + emi);
 		scannerObj.close();
 	}
 

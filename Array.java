@@ -1,38 +1,36 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
  * @author	Dinesh Yogi
- * @desc	find the index of an array element.
+ * @desc	Find the index of An Array element.
  */
 public class Array {
 
 	public static void main(String[] args) {
+		String className = "Array";
 		Scanner scanner = new Scanner(System.in);
 		try {
-			int element = 0;
 			int index = 0;
-			int i = 0;
 			int flag = 0;
 			int[] array = { 1, 2, 3, 4, 5 };
-			System.out.println("Please Enter the element: ");
-			element = scanner.nextInt();
-			for (i = 0; i < array.length; i++) {
+			CallingLogger.getInfoLoggerFrom(className, "Please Enter the element:");
+			int element = scanner.nextInt();
+			for (int i = 0; i < array.length; i++) {
 				if (element == array[i]) {
 					index = i;
 					flag = 1;
 				}
 			}
-
 			if (flag == 0) {
-				System.out.println("!!! Sorry Element not found !!!");
+				CallingLogger.getInfoLoggerFrom(className, "!!! Sorry Element not found !!!");
 			} else {
-				System.out.println("Index of the element is: " + index);
+				CallingLogger.getInfoLoggerFrom(className, "Index of the element is: " + index);
 			}
 		} catch (InputMismatchException inputMisMatchException) {
-			System.err.println("Enter only Number...");
+			CallingLogger.getWarningLoggerFrom(className, "Enter only Number...");
 		} finally {
 			scanner.close();
 		}

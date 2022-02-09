@@ -1,4 +1,6 @@
-package com.Programs;
+package com.programs;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -6,21 +8,20 @@ package com.Programs;
  */
 public class ThisAndSuperKeyword {
 
-	int number1 = 1;
+	int number1 = 0;
 
 	public ThisAndSuperKeyword() {
-		System.out.println("Default Constructor called... ");
+		CallingLogger.getInfoLoggerFrom("ThisAndSuperKeyword", "Default Constructor called... ");
 	}
 
-	public ThisAndSuperKeyword(int number1) {
+	public ThisAndSuperKeyword(int num) {
 		super();
-		this.number1 = number1;
-		System.out.println(number1);
+		this.number1 = num;
+		CallingLogger.getInfoLoggerFrom("ThisAndSuperKeyword", "" + number1);
 	}
 
 	public static void main(String[] args) {
-		ThisAndSuperKeyword thisAndSuperKeyword = new ThisAndSuperKeyword(121);
-		System.out.println(thisAndSuperKeyword.getClass().getSimpleName());
+		ThisAndSuperKeyword thisAndSuperKeywordObj = new ThisAndSuperKeyword(121);
 	}
 
 }

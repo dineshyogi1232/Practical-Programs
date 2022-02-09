@@ -1,4 +1,4 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 import java.util.Scanner;
 
@@ -8,17 +8,18 @@ import java.util.Scanner;
  */
 interface Laptop {
 
-	public void laptopDetails();
+	public abstract void laptopDetails();
 
 	public static void price(String name) {
+		String className = "Laptop";
 		if (name.equalsIgnoreCase("HP")) {
-			System.out.println("HP laptop price 45000 Rs ");
+			CallingLogger.getInfoLoggerFrom(className, "HP laptop price 45000 Rs ");
 		} else if (name.equalsIgnoreCase("Lenovo")) {
-			System.out.println("Lenovo laptop 50000 RS ");
+			CallingLogger.getInfoLoggerFrom(className, "Lenovo laptop 50000 RS ");
 		} else if (name.equalsIgnoreCase("DELL")) {
-			System.out.println("Dell laptop 55000 RS ");
+			CallingLogger.getInfoLoggerFrom(className, "Dell laptop 55000 RS ");
 		} else {
-			System.err.println("!!! Sorry Not available !!!");
+			CallingLogger.getInfoLoggerFrom(className, "!!! Sorry Not available !!!");
 		}
 	}
 
@@ -29,7 +30,7 @@ public class Interface implements Laptop {
 	@Override
 	public void laptopDetails() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Your Laptop Company Name: ");
+		CallingLogger.getInfoLoggerFrom("Interface", "Enter Your Laptop Company Name: ");
 		String laptopBrand = scanner.next();
 		Laptop.price(laptopBrand);
 		scanner.close();

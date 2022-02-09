@@ -1,4 +1,4 @@
-package com.OOPSConcepts;
+package com.oopsconcepts;
 
 /**
  * @author	Dinesh Yogi
@@ -7,7 +7,7 @@ package com.OOPSConcepts;
 class Parent {
 
 	public Parent() {
-		System.out.println("Parent Class Called... ");
+		CallingLogger.getInfoLoggerFrom("Parent", "Parent Class Called... ");
 	}
 
 }
@@ -15,7 +15,7 @@ class Parent {
 class SubClassA extends Parent {
 
 	public SubClassA() {
-		System.out.println("subclassA Class Called... ");
+		CallingLogger.getInfoLoggerFrom("SubClassA", "subclassA Class Called... ");
 	}
 
 }
@@ -23,7 +23,7 @@ class SubClassA extends Parent {
 class SubClassB extends SubClassA {
 
 	public SubClassB() {
-		System.out.println("subclassB Class Called... ");
+		CallingLogger.getInfoLoggerFrom("SubClassB", "subclassB Class Called... ");
 	}
 
 }
@@ -31,7 +31,7 @@ class SubClassB extends SubClassA {
 class SubClassC extends Parent {
 
 	public SubClassC() {
-		System.out.println("subclassC Class Called... ");
+		CallingLogger.getInfoLoggerFrom("SubClassC", "subclassC Class Called... ");
 	}
 
 }
@@ -39,7 +39,7 @@ class SubClassC extends Parent {
 class SubClassD extends Parent {
 
 	public SubClassD() {
-		System.out.println("subclassD Class Called... ");
+		CallingLogger.getInfoLoggerFrom("SubClassD", "subclassD Class Called... ");
 	}
 
 }
@@ -47,7 +47,7 @@ class SubClassD extends Parent {
 class SubClassE extends Parent {
 
 	public SubClassE() {
-		System.out.println("subclassE Class Called... ");
+		CallingLogger.getInfoLoggerFrom("SubClassE", "subclassE Class Called... ");
 	}
 
 }
@@ -55,7 +55,6 @@ class SubClassE extends Parent {
 public class Inheritance {
 
 	public static void main(String[] args) {
-		SubClassA subClassA = new SubClassA();
 		SubClassB subClassB = new SubClassB();
 		SubClassC subClassC = new SubClassC();
 		SubClassD subClassD = new SubClassD();

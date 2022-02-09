@@ -1,7 +1,9 @@
-package com.Programs;
+package com.programs;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -10,68 +12,69 @@ import java.util.Scanner;
 public class SwitchCase {
 
 	public static void main(String[] args) {
+		String className = "SwitchCase";
+		Scanner scannerObj = new Scanner(System.in);
 		try {
-			int noOfMonth = 0;
-			Scanner scannerObj = new Scanner(System.in);
-			System.out.println("Enter Number of Month: ");
-			noOfMonth = scannerObj.nextInt();
+			CallingLogger.getInfoLoggerFrom(className, "Enter Number of Month: ");
+			int noOfMonth = scannerObj.nextInt();
 			switch (noOfMonth) {
-				case 1:
-					System.out.println("January");
-					break;
+			case 1:
+				CallingLogger.getInfoLoggerFrom(className, "January");
+				break;
 
-				case 2:
-					System.out.println("February");
-					break;
+			case 2:
+				CallingLogger.getInfoLoggerFrom(className, "February");
+				break;
 
-				case 3:
-					System.out.println("March");
-					break;
+			case 3:
+				CallingLogger.getInfoLoggerFrom(className, "March");
+				break;
 
-				case 4:
-					System.out.println("April");
-					break;
+			case 4:
+				CallingLogger.getInfoLoggerFrom(className, "April");
+				break;
 
-				case 5:
-					System.out.println("May");
-					break;
+			case 5:
+				CallingLogger.getInfoLoggerFrom(className, "May");
+				break;
 
-				case 6:
-					System.out.println("June");
-					break;
+			case 6:
+				CallingLogger.getInfoLoggerFrom(className, "June");
+				break;
 
-				case 7:
-					System.out.println("July");
-					break;
+			case 7:
+				CallingLogger.getInfoLoggerFrom(className, "July");
+				break;
 
-				case 8:
-					System.out.println("August");
-					break;
+			case 8:
+				CallingLogger.getInfoLoggerFrom(className, "August");
+				break;
 
-				case 9:
-					System.out.println("September");
-					break;
+			case 9:
+				CallingLogger.getInfoLoggerFrom(className, "September");
+				break;
 
-				case 10:
-					System.out.println("October");
-					break;
+			case 10:
+				CallingLogger.getInfoLoggerFrom(className, "October");
+				break;
 
-				case 11:
-					System.out.println("November");
-					break;
+			case 11:
+				CallingLogger.getInfoLoggerFrom(className, "November");
+				break;
 
-				case 12:
-					System.out.println("December");
-					break;
+			case 12:
+				CallingLogger.getInfoLoggerFrom(className, "December");
+				break;
 
-				default:
-					System.err.println("Enter valid month number...");
-					break;
+			default:
+				CallingLogger.getWarningLoggerFrom(className, "Enter valid month number...");
+				break;
 			}
-			scannerObj.close();
 		} catch (InputMismatchException inputmismatchexception) {
-			System.err.println("Please enter only number");
+			CallingLogger.getWarningLoggerFrom(className, "Please enter only number");
+		} finally {
+			scannerObj.close();
 		}
 	}
-	
+
 }

@@ -1,10 +1,11 @@
-package com.Collection;
+package com.collection;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -13,6 +14,7 @@ import java.util.Set;
 public class MapAndSet {
 
 	public static void main(String[] args) {
+		String className = "MapAndSet";
 		Set<Integer> set = new HashSet<>();
 		set.add(1);
 		set.add(2);
@@ -28,14 +30,14 @@ public class MapAndSet {
 		map.put(5, "E");
 
 		Iterator<Integer> setIterator = set.iterator();
-		System.out.println("Set Element List: ");
+		CallingLogger.getInfoLoggerFrom(className, "Set Element List: ");
 		while (setIterator.hasNext()) {
-			System.out.println(setIterator.next());
+			CallingLogger.getInfoLoggerFrom(className, "" + setIterator.next());
 		}
 		Iterator<String> mapIterator = map.values().iterator();
-		System.out.println("Map Element List: ");
+		CallingLogger.getInfoLoggerFrom(className, "Map Element List: ");
 		while (mapIterator.hasNext()) {
-			System.out.println(mapIterator.next());
+			CallingLogger.getInfoLoggerFrom(className, "" + mapIterator.next());
 		}
 	}
 
