@@ -3,7 +3,6 @@ package com.collection;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -18,9 +17,10 @@ public class ListProgram {
 		list.add("World");
 		list.add("QDev");
 		list.add("Technolabs");
+
 		Iterator<String> iterator = list.iterator();
 		while (iterator.hasNext()) {
-			CallingLogger.getInfoLoggerFrom("ListProgram", iterator.next());
+			System.out.println(iterator.next());
 		}
 	}
 

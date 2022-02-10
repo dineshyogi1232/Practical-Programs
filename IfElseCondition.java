@@ -1,7 +1,6 @@
 package com.programs;
 
 import java.util.Scanner;
-import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -10,17 +9,16 @@ import com.oopsconcepts.CallingLogger;
 public class IfElseCondition {
 
 	public static void main(String[] args) {
-		String className = "IfElseCondition";
 		final int minimumAge = 18;
 		Scanner scanner = new Scanner(System.in);
-		CallingLogger.getInfoLoggerFrom(className, "Enter the Age: ");
+		System.out.println("Enter the Age: ");
 		int age = scanner.nextInt();
 
 		// for check age
 		if (age >= minimumAge) {
-			CallingLogger.getInfoLoggerFrom(className, "You are eligible for vote");
+			System.out.println("You are eligible for vote");
 		} else {
-			CallingLogger.getInfoLoggerFrom(className, "You are not eligible for vote");
+			System.out.println("You are not eligible for vote");
 		}
 		scanner.close();
 	}

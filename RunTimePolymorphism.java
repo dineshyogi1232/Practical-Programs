@@ -7,7 +7,7 @@ package com.oopsconcepts;
 class Base {
 
 	void display() {
-		CallingLogger.getInfoLoggerFrom("Base", "Base Class Called... ");
+		System.out.println("Base Class Called... ");
 	}
 
 }
@@ -16,7 +16,7 @@ class Derived extends Base {
 
 	@Override
 	void display() {
-		CallingLogger.getInfoLoggerFrom("Derived", "Derived Class Called... ");
+		System.out.println("Derived Class Called... ");
 	}
 
 }

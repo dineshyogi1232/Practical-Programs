@@ -1,7 +1,5 @@
 package com.programs;
 
-import com.oopsconcepts.CallingLogger;
-
 /**
  * @author	Dinesh Yogi
  * @desc	Hello World program
@@ -9,7 +7,7 @@ import com.oopsconcepts.CallingLogger;
 public class Demo {
 
 	public static void main(String[] args) {
-		CallingLogger.getInfoLoggerFrom("Demo", "Hello World");
+		System.out.println("Hello World");
 	}
 
 }

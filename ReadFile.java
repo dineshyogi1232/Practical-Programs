@@ -3,7 +3,6 @@ package com.collection;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -15,7 +14,7 @@ public class ReadFile {
 		File file = new File("myTestFile.txt");
 		Scanner scanner = new Scanner(file);
 		while (scanner.hasNextLine()) {
-			CallingLogger.getInfoLoggerFrom("ReadFile", scanner.nextLine());
+			System.out.println(scanner.nextLine());
 		}
 		scanner.close();
 	}

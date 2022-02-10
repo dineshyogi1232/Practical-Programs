@@ -7,7 +7,7 @@ package com.oopsconcepts;
 class Parent {
 
 	public Parent() {
-		CallingLogger.getInfoLoggerFrom("Parent", "Parent Class Called... ");
+		System.out.println("Parent Class Called... ");
 	}
 
 }
@@ -15,7 +15,7 @@ class Parent {
 class SubClassA extends Parent {
 
 	public SubClassA() {
-		CallingLogger.getInfoLoggerFrom("SubClassA", "subclassA Class Called... ");
+		System.out.println("subclassA Class Called... ");
 	}
 
 }
@@ -23,7 +23,7 @@ class SubClassA extends Parent {
 class SubClassB extends SubClassA {
 
 	public SubClassB() {
-		CallingLogger.getInfoLoggerFrom("SubClassB", "subclassB Class Called... ");
+		System.out.println("subclassB Class Called... ");
 	}
 
 }
@@ -31,7 +31,7 @@ class SubClassB extends SubClassA {
 class SubClassC extends Parent {
 
 	public SubClassC() {
-		CallingLogger.getInfoLoggerFrom("SubClassC", "subclassC Class Called... ");
+		System.out.println("subclassC Class Called... ");
 	}
 
 }
@@ -39,7 +39,7 @@ class SubClassC extends Parent {
 class SubClassD extends Parent {
 
 	public SubClassD() {
-		CallingLogger.getInfoLoggerFrom("SubClassD", "subclassD Class Called... ");
+		System.out.println("subclassD Class Called... ");
 	}
 
 }
@@ -47,7 +47,7 @@ class SubClassD extends Parent {
 class SubClassE extends Parent {
 
 	public SubClassE() {
-		CallingLogger.getInfoLoggerFrom("SubClassE", "subclassE Class Called... ");
+		System.out.println("subclassE Class Called... ");
 	}
 
 }

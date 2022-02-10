@@ -7,8 +7,6 @@ package com.oopsconcepts;
  */
 public class ExceptionHandling {
 
-	private static String className = "ExceptionHandling";
-
 	public static void main(String[] args) {
 		try {
 			int number1 = 1;
@@ -20,22 +18,22 @@ public class ExceptionHandling {
 			// Calculation give error
 			division = number1 / number2;
 
-			CallingLogger.getInfoLoggerFrom(className, "Division is : " + division);
+			System.out.println("Division is : " + division);
 		} catch (ArithmeticException arithmeticexception) {
-			CallingLogger.getWarningLoggerFrom(className, "Arithmetic Exception Occured... ");
+			System.err.println("Arithmetic Exception Occured... ");
 		} finally {
-			CallingLogger.getFinerLoggerFrom(className, "Bye...");
+			System.out.println("Bye...");
 		}
 	}
 
 	static void throwException() throws ArithmeticException {
 		try {
-			CallingLogger.getWarningLoggerFrom(className, "Throw Exception Occured... ");
+			System.err.println("Throw Exception Occured... ");
 			throw new ArithmeticException("Devide By Zero");
 		} catch (ArithmeticException arithmeticException) {
-			CallingLogger.getWarningLoggerFrom(className, "Throw Arithmetic Exception Occured... ");
+			System.err.println("Throw Arithmetic Exception Occured... ");
 		} finally {
-			CallingLogger.getFinerLoggerFrom(className, "In throwException() Bye...");
+			System.err.println("In throwException() Bye...");
 		}
 	}
 
