@@ -7,8 +7,8 @@ package com.oopsconcepts;
 public class CompileTimePolymorphism {
 
 	public static void main(String[] args) {
-		CallingLogger.getInfoLoggerFrom("CompileTimePolymorphism", ProgramOfCalculation.sum(1, 2));
-		CallingLogger.getInfoLoggerFrom("CompileTimePolymorphism", ProgramOfCalculation.sum(1, 2, 3));
+		System.out.println(ProgramOfCalculation.sum(1, 2));
+		System.out.println(ProgramOfCalculation.sum(1, 2, 3));
 	}
 
 }

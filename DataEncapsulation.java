@@ -6,9 +6,9 @@ package com.oopsconcepts;
  */
 class Student {
 
-	String firstName = null;
-	String lastName = null;
-	int age = 0;
+	private String firstName;
+	private String lastName;
+	private int age;
 
 	public String getFirstName() {
 		return firstName;
@@ -43,9 +43,8 @@ public class DataEncapsulation {
 		student.setFirstName("Dinesh");
 		student.setLastName("Yogi");
 		student.setAge(18);
-		CallingLogger.getInfoLoggerFrom("DataEncapsulation",
-				"Student Name: " + student.getFirstName() + " " + student.getLastName());
-		CallingLogger.getInfoLoggerFrom("DataEncapsulation", "Student Age: " + student.getAge());
+		System.out.println("Student Name: " + student.getFirstName() + " " + student.getLastName());
+		System.out.println("Student Age: " + student.getAge());
 	}
 
 }

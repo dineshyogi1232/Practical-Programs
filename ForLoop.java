@@ -12,7 +12,7 @@ public class ForLoop {
 		// For pattern
 		for (int row = 1; row <= size; row++) {
 			for (int column = 1; column <= row; column++) {
-				System.out.print("* ");
+				System.out.println("* ");
 			}
 			System.out.println();
 		}

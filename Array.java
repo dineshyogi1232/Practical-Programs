@@ -10,13 +10,12 @@ import java.util.Scanner;
 public class Array {
 
 	public static void main(String[] args) {
-		String className = "Array";
 		Scanner scanner = new Scanner(System.in);
 		try {
 			int index = 0;
 			int flag = 0;
 			int[] array = { 1, 2, 3, 4, 5 };
-			CallingLogger.getInfoLoggerFrom(className, "Please Enter the element:");
+			System.out.println("Please Enter the element:");
 			int element = scanner.nextInt();
 			for (int i = 0; i < array.length; i++) {
 				if (element == array[i]) {
@@ -25,12 +24,12 @@ public class Array {
 				}
 			}
 			if (flag == 0) {
-				CallingLogger.getInfoLoggerFrom(className, "!!! Sorry Element not found !!!");
+				System.out.println("!!! Sorry Element not found !!!");
 			} else {
-				CallingLogger.getInfoLoggerFrom(className, "Index of the element is: " + index);
+				System.out.println("Index of the element is: " + index);
 			}
 		} catch (InputMismatchException inputMisMatchException) {
-			CallingLogger.getWarningLoggerFrom(className, "Enter only Number...");
+			System.out.println("Enter only Number...");
 		} finally {
 			scanner.close();
 		}

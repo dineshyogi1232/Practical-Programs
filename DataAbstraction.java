@@ -13,7 +13,7 @@ abstract class Shape {
 	public abstract String toGetShape();
 
 	protected Shape(String color) {
-		CallingLogger.getInfoLoggerFrom("Shape", "Shape constructor called");
+		System.out.println("Shape constructor called");
 		this.color = color;
 	}
 
@@ -29,7 +29,7 @@ class Circle extends Shape {
 
 	public Circle(String color, double radius) {
 		super(color);
-		CallingLogger.getInfoLoggerFrom("Circle", "Circle constructor called");
+		System.out.println("Circle constructor called");
 		this.radius = radius;
 	}
 
@@ -52,7 +52,7 @@ class Rectangle extends Shape {
 
 	public Rectangle(String color, double length, double width) {
 		super(color);
-		CallingLogger.getInfoLoggerFrom("Rectangle", "Rectangle constructor called");
+		System.out.println("Rectangle constructor called");
 		this.length = length;
 		this.width = width;
 	}
@@ -74,8 +74,8 @@ public class DataAbstraction {
 	public static void main(String[] args) {
 		Shape shape1 = new Circle("Black", 8.2);
 		Shape shape2 = new Rectangle("White", 5, 6);
-		CallingLogger.getInfoLoggerFrom("DataAbstration", shape1.toGetShape());
-		CallingLogger.getInfoLoggerFrom("DataAbstration", shape2.toGetShape());
+		System.out.println(shape1.toGetShape());
+		System.out.println(shape2.toGetShape());
 	}
 
 }

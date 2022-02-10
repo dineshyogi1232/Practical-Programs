@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -14,7 +13,6 @@ import com.oopsconcepts.CallingLogger;
 public class MapAndSet {
 
 	public static void main(String[] args) {
-		String className = "MapAndSet";
 		Set<Integer> set = new HashSet<>();
 		set.add(1);
 		set.add(2);
@@ -30,14 +28,15 @@ public class MapAndSet {
 		map.put(5, "E");
 
 		Iterator<Integer> iterator1 = set.iterator();
-		CallingLogger.getInfoLoggerFrom(className, "Set Element List: ");
+		System.out.println("Set Element List: ");
 		while (iterator1.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className, iterator1.next().toString());
+			System.out.println(iterator1.next());
 		}
+
 		Iterator<String> iterator2 = map.values().iterator();
-		CallingLogger.getInfoLoggerFrom(className, "Map Element List: ");
+		System.out.println("Map Element List: ");
 		while (iterator2.hasNext()) {
-			CallingLogger.getInfoLoggerFrom(className,iterator2.next());
+			System.out.println(iterator2.next());
 		}
 	}
 

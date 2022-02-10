@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import com.oopsconcepts.CallingLogger;
 
 /**
  * @author	Dinesh Yogi
@@ -23,10 +22,11 @@ public class ListProgram2 {
 		list1.add("E");
 		list1.add("E");
 		list1.add("E");
+
 		// Convert list in set to remove duplicate elements
 		Set<String> set = new HashSet<>(list1);
 		List<String> list2 = new ArrayList<>(set);
-		CallingLogger.getInfoLoggerFrom("ListProgram2", list2.toString());
+		System.out.println(list2);
 	}
 
 }
